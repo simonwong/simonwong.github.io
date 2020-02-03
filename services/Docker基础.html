@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Docker 入门 | 王思杰的前端笔记</title>
+    <meta name="description" content="分享日常总结，工具框架的使用以及整理">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.bc998d39.css" as="style"><link rel="preload" href="/assets/js/app.876ef44c.js" as="script"><link rel="preload" href="/assets/js/2.d5ff8cd8.js" as="script"><link rel="preload" href="/assets/js/32.e4d0a55e.js" as="script"><link rel="prefetch" href="/assets/js/10.0d9dd5cf.js"><link rel="prefetch" href="/assets/js/11.2ad13dd7.js"><link rel="prefetch" href="/assets/js/12.ecd8935f.js"><link rel="prefetch" href="/assets/js/13.564e0db1.js"><link rel="prefetch" href="/assets/js/14.f4e3a4fd.js"><link rel="prefetch" href="/assets/js/15.a43c371d.js"><link rel="prefetch" href="/assets/js/16.e99fa4a7.js"><link rel="prefetch" href="/assets/js/17.ea4d0418.js"><link rel="prefetch" href="/assets/js/18.57be587b.js"><link rel="prefetch" href="/assets/js/19.9007b4a1.js"><link rel="prefetch" href="/assets/js/20.4423d289.js"><link rel="prefetch" href="/assets/js/21.3ae7c9ab.js"><link rel="prefetch" href="/assets/js/22.7183cd88.js"><link rel="prefetch" href="/assets/js/23.09b7c4db.js"><link rel="prefetch" href="/assets/js/24.ba924c95.js"><link rel="prefetch" href="/assets/js/25.94b1c1a7.js"><link rel="prefetch" href="/assets/js/26.326f8c11.js"><link rel="prefetch" href="/assets/js/27.b432a411.js"><link rel="prefetch" href="/assets/js/28.22213599.js"><link rel="prefetch" href="/assets/js/29.aee64bd1.js"><link rel="prefetch" href="/assets/js/3.3564f8e8.js"><link rel="prefetch" href="/assets/js/30.5c4ab65c.js"><link rel="prefetch" href="/assets/js/31.9bfcded9.js"><link rel="prefetch" href="/assets/js/33.f5c74eaf.js"><link rel="prefetch" href="/assets/js/34.11d667ff.js"><link rel="prefetch" href="/assets/js/35.18efd62b.js"><link rel="prefetch" href="/assets/js/36.b530f6c1.js"><link rel="prefetch" href="/assets/js/37.f4b9b17b.js"><link rel="prefetch" href="/assets/js/38.c964c018.js"><link rel="prefetch" href="/assets/js/39.1582540b.js"><link rel="prefetch" href="/assets/js/4.81f763ce.js"><link rel="prefetch" href="/assets/js/40.615d15cb.js"><link rel="prefetch" href="/assets/js/41.36e27304.js"><link rel="prefetch" href="/assets/js/42.d720d57f.js"><link rel="prefetch" href="/assets/js/43.bce8fddb.js"><link rel="prefetch" href="/assets/js/44.f951f1a4.js"><link rel="prefetch" href="/assets/js/45.21f1ebb3.js"><link rel="prefetch" href="/assets/js/46.2e1705ec.js"><link rel="prefetch" href="/assets/js/47.a4de7eb0.js"><link rel="prefetch" href="/assets/js/48.4c6a9cd9.js"><link rel="prefetch" href="/assets/js/49.f2525799.js"><link rel="prefetch" href="/assets/js/5.8a794f02.js"><link rel="prefetch" href="/assets/js/50.3f724a99.js"><link rel="prefetch" href="/assets/js/51.0fd5d63c.js"><link rel="prefetch" href="/assets/js/52.283a65da.js"><link rel="prefetch" href="/assets/js/53.f9875ab3.js"><link rel="prefetch" href="/assets/js/54.0b2b261e.js"><link rel="prefetch" href="/assets/js/55.869d682d.js"><link rel="prefetch" href="/assets/js/56.a77d0306.js"><link rel="prefetch" href="/assets/js/57.513e03a2.js"><link rel="prefetch" href="/assets/js/58.d65622c2.js"><link rel="prefetch" href="/assets/js/59.34580977.js"><link rel="prefetch" href="/assets/js/6.aef96389.js"><link rel="prefetch" href="/assets/js/7.ad083e7b.js"><link rel="prefetch" href="/assets/js/8.704e9adc.js"><link rel="prefetch" href="/assets/js/9.4a1df761.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bc998d39.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">王思杰的前端笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note/" class="nav-link">
+  日常笔记
+</a></div><div class="nav-item"><a href="/advanced/webpack/" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/backend/node基础/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/services/nginx基础/" class="nav-link">
+  服务器
+</a></div><div class="nav-item"><a href="/computerbasic/进制/" class="nav-link">
+  计算机基础
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="https://github.com/simonwong" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note/" class="nav-link">
+  日常笔记
+</a></div><div class="nav-item"><a href="/advanced/webpack/" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/backend/node基础/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/services/nginx基础/" class="nav-link">
+  服务器
+</a></div><div class="nav-item"><a href="/computerbasic/进制/" class="nav-link">
+  计算机基础
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="https://github.com/simonwong" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/services/nginx基础.html" class="sidebar-link">nginx 配置</a></li><li><a href="/services/nginx配置https.html" class="sidebar-link">安装 nginx</a></li><li><a href="/services/Docker基础.html" class="active sidebar-link">Docker 入门</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/services/Docker基础.html#dockerfile" class="sidebar-link">Dockerfile</a></li><li class="sidebar-sub-header"><a href="/services/Docker基础.html#常用命令" class="sidebar-link">常用命令</a></li><li class="sidebar-sub-header"><a href="/services/Docker基础.html#docker-build" class="sidebar-link">docker build</a></li></ul></li><li><a href="/services/acme.sh证书颁发.html" class="sidebar-link">acme.sh 证书颁发</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="docker-入门"><a href="#docker-入门" class="header-anchor">#</a> Docker 入门</h1> <h2 id="dockerfile"><a href="#dockerfile" class="header-anchor">#</a> Dockerfile</h2> <div class="language-dockerfile extra-class"><pre class="language-dockerfile"><code>
+<span class="token comment"># image 文件构建阶段执行，执行结果会被打包进入 image 文件</span>
+<span class="token keyword">RUN</span> npm install
+
+<span class="token comment"># 容器启动后执行</span>
+<span class="token keyword">CMD</span> node index.js
+</code></pre></div><h2 id="常用命令"><a href="#常用命令" class="header-anchor">#</a> 常用命令</h2> <ul><li><p>docker container start</p> <p>生成/启动容器，但不会重复生成容器；；； docker container run 会重复生成</p></li></ul> <div class="language-powershell extra-class"><pre class="language-powershell"><code>$ docker container <span class="token function">start</span> <span class="token namespace">[containerID]</span>
+</code></pre></div><p>更多参数:</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token operator">-</span>d ：在后台运行
+<span class="token operator">-</span>it : 容器的 shell 映射到当前的 shell ， 然后在本机窗口输入命令，会传入容器
+<span class="token operator">-</span>p 80:3000 ：将容器的 3000 端口映射到宿主机的 80 端口
+<span class="token operator">--</span><span class="token function">rm</span> : 容器停止运行后，自动删除容器文件
+<span class="token operator">--</span>name xxx : 容器名字为 xxx
+</code></pre></div><ul><li><p>docker container stop</p> <p>终止容器运行，相当于先发起 SIGTERM 信号，过段时间再发出 SIGKILL；；docker container kill 会直接发出 sigkill</p></li></ul> <div class="language-powershell extra-class"><pre class="language-powershell"><code>$ docker container stop <span class="token namespace">[containerID]</span>
+</code></pre></div><ul><li><p>docker container exec</p> <p>进入一个正在运行的 docker 容器</p></li></ul> <div class="language-powershell extra-class"><pre class="language-powershell"><code>$ docker container exec <span class="token operator">-</span>it <span class="token namespace">[containerID]</span> bash
+</code></pre></div><p>通过 <code>ctrl + p +q</code> 可以推出当前容器且不会关闭容器</p> <ul><li><p>docker container cp</p> <p>从正在运行的 Docker 容器里，将文件拷贝到本机</p></li></ul> <div class="language-powershell extra-class"><pre class="language-powershell"><code>$ docker container <span class="token function">cp</span> <span class="token namespace">[containID]</span>:<span class="token punctuation">[</span><span class="token operator">/</span>path<span class="token operator">/</span>to<span class="token operator">/</span>file<span class="token punctuation">]</span> <span class="token punctuation">.</span>
+</code></pre></div><h2 id="docker-build"><a href="#docker-build" class="header-anchor">#</a> docker build</h2> <div class="language-powershell extra-class"><pre class="language-powershell"><code>$ docker build <span class="token namespace">[OPTIONS]</span> PATH <span class="token punctuation">|</span> URL <span class="token punctuation">|</span> <span class="token operator">-</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2 minutes ago</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/services/nginx配置https.html" class="prev">
+        安装 nginx
+      </a></span> <span class="next"><a href="/services/acme.sh证书颁发.html">
+        acme.sh 证书颁发
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.876ef44c.js" defer></script><script src="/assets/js/2.d5ff8cd8.js" defer></script><script src="/assets/js/32.e4d0a55e.js" defer></script>
+  </body>
+</html>

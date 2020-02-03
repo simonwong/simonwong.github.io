@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mac 多 git 账户配置 | 王思杰的前端笔记</title>
+    <meta name="description" content="分享日常总结，工具框架的使用以及整理">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.bc998d39.css" as="style"><link rel="preload" href="/assets/js/app.876ef44c.js" as="script"><link rel="preload" href="/assets/js/2.d5ff8cd8.js" as="script"><link rel="preload" href="/assets/js/13.564e0db1.js" as="script"><link rel="prefetch" href="/assets/js/10.0d9dd5cf.js"><link rel="prefetch" href="/assets/js/11.2ad13dd7.js"><link rel="prefetch" href="/assets/js/12.ecd8935f.js"><link rel="prefetch" href="/assets/js/14.f4e3a4fd.js"><link rel="prefetch" href="/assets/js/15.a43c371d.js"><link rel="prefetch" href="/assets/js/16.e99fa4a7.js"><link rel="prefetch" href="/assets/js/17.ea4d0418.js"><link rel="prefetch" href="/assets/js/18.57be587b.js"><link rel="prefetch" href="/assets/js/19.9007b4a1.js"><link rel="prefetch" href="/assets/js/20.4423d289.js"><link rel="prefetch" href="/assets/js/21.3ae7c9ab.js"><link rel="prefetch" href="/assets/js/22.7183cd88.js"><link rel="prefetch" href="/assets/js/23.09b7c4db.js"><link rel="prefetch" href="/assets/js/24.ba924c95.js"><link rel="prefetch" href="/assets/js/25.94b1c1a7.js"><link rel="prefetch" href="/assets/js/26.326f8c11.js"><link rel="prefetch" href="/assets/js/27.b432a411.js"><link rel="prefetch" href="/assets/js/28.22213599.js"><link rel="prefetch" href="/assets/js/29.aee64bd1.js"><link rel="prefetch" href="/assets/js/3.3564f8e8.js"><link rel="prefetch" href="/assets/js/30.5c4ab65c.js"><link rel="prefetch" href="/assets/js/31.9bfcded9.js"><link rel="prefetch" href="/assets/js/32.e4d0a55e.js"><link rel="prefetch" href="/assets/js/33.f5c74eaf.js"><link rel="prefetch" href="/assets/js/34.11d667ff.js"><link rel="prefetch" href="/assets/js/35.18efd62b.js"><link rel="prefetch" href="/assets/js/36.b530f6c1.js"><link rel="prefetch" href="/assets/js/37.f4b9b17b.js"><link rel="prefetch" href="/assets/js/38.c964c018.js"><link rel="prefetch" href="/assets/js/39.1582540b.js"><link rel="prefetch" href="/assets/js/4.81f763ce.js"><link rel="prefetch" href="/assets/js/40.615d15cb.js"><link rel="prefetch" href="/assets/js/41.36e27304.js"><link rel="prefetch" href="/assets/js/42.d720d57f.js"><link rel="prefetch" href="/assets/js/43.bce8fddb.js"><link rel="prefetch" href="/assets/js/44.f951f1a4.js"><link rel="prefetch" href="/assets/js/45.21f1ebb3.js"><link rel="prefetch" href="/assets/js/46.2e1705ec.js"><link rel="prefetch" href="/assets/js/47.a4de7eb0.js"><link rel="prefetch" href="/assets/js/48.4c6a9cd9.js"><link rel="prefetch" href="/assets/js/49.f2525799.js"><link rel="prefetch" href="/assets/js/5.8a794f02.js"><link rel="prefetch" href="/assets/js/50.3f724a99.js"><link rel="prefetch" href="/assets/js/51.0fd5d63c.js"><link rel="prefetch" href="/assets/js/52.283a65da.js"><link rel="prefetch" href="/assets/js/53.f9875ab3.js"><link rel="prefetch" href="/assets/js/54.0b2b261e.js"><link rel="prefetch" href="/assets/js/55.869d682d.js"><link rel="prefetch" href="/assets/js/56.a77d0306.js"><link rel="prefetch" href="/assets/js/57.513e03a2.js"><link rel="prefetch" href="/assets/js/58.d65622c2.js"><link rel="prefetch" href="/assets/js/59.34580977.js"><link rel="prefetch" href="/assets/js/6.aef96389.js"><link rel="prefetch" href="/assets/js/7.ad083e7b.js"><link rel="prefetch" href="/assets/js/8.704e9adc.js"><link rel="prefetch" href="/assets/js/9.4a1df761.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bc998d39.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">王思杰的前端笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note/" class="nav-link">
+  日常笔记
+</a></div><div class="nav-item"><a href="/advanced/webpack/" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/backend/node基础/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/services/nginx基础/" class="nav-link">
+  服务器
+</a></div><div class="nav-item"><a href="/computerbasic/进制/" class="nav-link">
+  计算机基础
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="https://github.com/simonwong" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note/" class="nav-link">
+  日常笔记
+</a></div><div class="nav-item"><a href="/advanced/webpack/" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/backend/node基础/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/services/nginx基础/" class="nav-link">
+  服务器
+</a></div><div class="nav-item"><a href="/computerbasic/进制/" class="nav-link">
+  计算机基础
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="https://github.com/simonwong" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Webpack</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Git 操作指南</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/advanced/git/git操作指南.html" class="sidebar-link">git操作指南</a></li><li><a href="/advanced/git/gitlab-workflow.html" class="sidebar-link">Gitlab work flow</a></li><li><a href="/advanced/git/mac多git账户配置.html" class="active sidebar-link">Mac 多 git 账户配置</a></li></ul></section></li><li><a href="/advanced/npm.html" class="sidebar-link">npm</a></li><li><a href="/advanced/yarn.html" class="sidebar-link">yarn</a></li><li><a href="/advanced/TypeScript.html" class="sidebar-link">TypeScript</a></li><li><a href="/advanced/TypeScript、Rollup 搭建工具库.html" class="sidebar-link">TypeScript、Rollup 搭建工具库</a></li><li><a href="/advanced/从 webpack 打包看前端模块化.html" class="sidebar-link">从 webpack 打包看前端模块化</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="mac-多-git-账户配置"><a href="#mac-多-git-账户配置" class="header-anchor">#</a> Mac 多 git 账户配置</h1> <p><a href="https://segmentfault.com/a/1190000016269686" target="_blank" rel="noopener noreferrer">https://segmentfault.com/a/1190000016269686<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://deepzz.com/post/how-to-setup-ssh-config.html" target="_blank" rel="noopener noreferrer">https://deepzz.com/post/how-to-setup-ssh-config.html<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2 minutes ago</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/advanced/git/gitlab-workflow.html" class="prev">
+        Gitlab work flow
+      </a></span> <span class="next"><a href="/advanced/npm.html">
+        npm
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.876ef44c.js" defer></script><script src="/assets/js/2.d5ff8cd8.js" defer></script><script src="/assets/js/13.564e0db1.js" defer></script>
+  </body>
+</html>
