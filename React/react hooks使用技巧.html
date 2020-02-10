@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React Hooks 使用技巧 | 王思杰的前端笔记</title>
+    <meta name="description" content="分享日常总结，工具框架的使用以及整理">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.20385465.css" as="style"><link rel="preload" href="/assets/js/app.24e3f9df.js" as="script"><link rel="preload" href="/assets/js/2.d5ff8cd8.js" as="script"><link rel="preload" href="/assets/js/9.25155adf.js" as="script"><link rel="prefetch" href="/assets/js/10.839a965f.js"><link rel="prefetch" href="/assets/js/11.1842e99c.js"><link rel="prefetch" href="/assets/js/12.475e862c.js"><link rel="prefetch" href="/assets/js/13.c6191354.js"><link rel="prefetch" href="/assets/js/14.8cd175f6.js"><link rel="prefetch" href="/assets/js/15.4eb4281f.js"><link rel="prefetch" href="/assets/js/16.c5437a88.js"><link rel="prefetch" href="/assets/js/17.a3d2bd56.js"><link rel="prefetch" href="/assets/js/18.e16ae9c5.js"><link rel="prefetch" href="/assets/js/19.9634373e.js"><link rel="prefetch" href="/assets/js/20.37aa4df9.js"><link rel="prefetch" href="/assets/js/21.54df3d70.js"><link rel="prefetch" href="/assets/js/22.1f5b88c5.js"><link rel="prefetch" href="/assets/js/23.36dd52e9.js"><link rel="prefetch" href="/assets/js/24.235f7265.js"><link rel="prefetch" href="/assets/js/25.e8db97f2.js"><link rel="prefetch" href="/assets/js/26.af9d56fc.js"><link rel="prefetch" href="/assets/js/27.05ab05cd.js"><link rel="prefetch" href="/assets/js/28.4590a75b.js"><link rel="prefetch" href="/assets/js/29.52f66471.js"><link rel="prefetch" href="/assets/js/3.a92bc435.js"><link rel="prefetch" href="/assets/js/30.10dab5c1.js"><link rel="prefetch" href="/assets/js/31.ef08fbdf.js"><link rel="prefetch" href="/assets/js/32.e0be3a86.js"><link rel="prefetch" href="/assets/js/33.e31462e6.js"><link rel="prefetch" href="/assets/js/34.51ba4051.js"><link rel="prefetch" href="/assets/js/35.e31ed7e6.js"><link rel="prefetch" href="/assets/js/36.643bc124.js"><link rel="prefetch" href="/assets/js/37.442af42e.js"><link rel="prefetch" href="/assets/js/38.f45e4b4d.js"><link rel="prefetch" href="/assets/js/39.c2db1666.js"><link rel="prefetch" href="/assets/js/4.81f763ce.js"><link rel="prefetch" href="/assets/js/40.7ba18c79.js"><link rel="prefetch" href="/assets/js/41.8623ee24.js"><link rel="prefetch" href="/assets/js/42.5cbcdade.js"><link rel="prefetch" href="/assets/js/43.f5786150.js"><link rel="prefetch" href="/assets/js/44.0fe02886.js"><link rel="prefetch" href="/assets/js/45.b92986d6.js"><link rel="prefetch" href="/assets/js/46.9c13309b.js"><link rel="prefetch" href="/assets/js/47.6089ca8e.js"><link rel="prefetch" href="/assets/js/48.726022c1.js"><link rel="prefetch" href="/assets/js/49.1f55715d.js"><link rel="prefetch" href="/assets/js/5.8a794f02.js"><link rel="prefetch" href="/assets/js/50.1b7fea6a.js"><link rel="prefetch" href="/assets/js/51.f3944f0d.js"><link rel="prefetch" href="/assets/js/52.07fdc358.js"><link rel="prefetch" href="/assets/js/53.bb95cd11.js"><link rel="prefetch" href="/assets/js/54.77e09480.js"><link rel="prefetch" href="/assets/js/55.1f17cd6f.js"><link rel="prefetch" href="/assets/js/56.c6d4a472.js"><link rel="prefetch" href="/assets/js/57.fcac4731.js"><link rel="prefetch" href="/assets/js/58.20f6d384.js"><link rel="prefetch" href="/assets/js/59.5ceeb006.js"><link rel="prefetch" href="/assets/js/6.aef96389.js"><link rel="prefetch" href="/assets/js/60.1f4710c1.js"><link rel="prefetch" href="/assets/js/61.fb21a1be.js"><link rel="prefetch" href="/assets/js/7.ad083e7b.js"><link rel="prefetch" href="/assets/js/8.704e9adc.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.20385465.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">王思杰的前端笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note/" class="nav-link">
+  日常笔记
+</a></div><div class="nav-item"><a href="/advanced/webpack/" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/backend/node基础/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/services/nginx基础/" class="nav-link">
+  服务器
+</a></div><div class="nav-item"><a href="/computerbasic/进制/" class="nav-link">
+  计算机基础
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="https://github.com/simonwong" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note/" class="nav-link">
+  日常笔记
+</a></div><div class="nav-item"><a href="/advanced/webpack/" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/backend/node基础/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/services/nginx基础/" class="nav-link">
+  服务器
+</a></div><div class="nav-item"><a href="/computerbasic/进制/" class="nav-link">
+  计算机基础
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="https://github.com/simonwong" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="react-hooks-使用技巧"><a href="#react-hooks-使用技巧" class="header-anchor">#</a> React Hooks 使用技巧</h1> <h2 id="依赖"><a href="#依赖" class="header-anchor">#</a> 依赖</h2> <h3 id="useeffect-依赖公用函数"><a href="#useeffect-依赖公用函数" class="header-anchor">#</a> useEffect 依赖公用函数</h3> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">function</span> <span class="token function">UserList</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">[</span>index<span class="token punctuation">,</span> setIndex<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> fetchData <span class="token operator">=</span> <span class="token function">useCallback</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">featchMetod</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    
+    <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">fetchData</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>fetchData<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    
+    <span class="token keyword">function</span> <span class="token function">doSomething</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">fetchData</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    	<span class="token comment">//...</span>
+    <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">a minute ago</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.24e3f9df.js" defer></script><script src="/assets/js/2.d5ff8cd8.js" defer></script><script src="/assets/js/9.25155adf.js" defer></script>
+  </body>
+</html>
