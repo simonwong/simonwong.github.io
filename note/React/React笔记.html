@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React笔记 | 王思杰的前端笔记</title>
+    <meta name="description" content="分享日常总结，工具框架的使用以及整理">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.5dca0c20.css" as="style"><link rel="preload" href="/assets/js/app.c4d6f5b8.js" as="script"><link rel="preload" href="/assets/js/2.2626b531.js" as="script"><link rel="preload" href="/assets/js/29.36016667.js" as="script"><link rel="prefetch" href="/assets/js/10.6480b5c3.js"><link rel="prefetch" href="/assets/js/11.e382e456.js"><link rel="prefetch" href="/assets/js/12.e2578388.js"><link rel="prefetch" href="/assets/js/13.6de11328.js"><link rel="prefetch" href="/assets/js/14.812354d8.js"><link rel="prefetch" href="/assets/js/15.1ddba6a5.js"><link rel="prefetch" href="/assets/js/16.89f5ea04.js"><link rel="prefetch" href="/assets/js/17.c3ee90c8.js"><link rel="prefetch" href="/assets/js/18.c30575c2.js"><link rel="prefetch" href="/assets/js/19.0edad3c9.js"><link rel="prefetch" href="/assets/js/20.762dfa4b.js"><link rel="prefetch" href="/assets/js/21.e8c088eb.js"><link rel="prefetch" href="/assets/js/22.7d90f6c4.js"><link rel="prefetch" href="/assets/js/23.63178aba.js"><link rel="prefetch" href="/assets/js/24.a4ac8e0d.js"><link rel="prefetch" href="/assets/js/25.1098605c.js"><link rel="prefetch" href="/assets/js/26.6932f790.js"><link rel="prefetch" href="/assets/js/27.28e5191e.js"><link rel="prefetch" href="/assets/js/28.62a624be.js"><link rel="prefetch" href="/assets/js/3.de4b7d18.js"><link rel="prefetch" href="/assets/js/30.f523114a.js"><link rel="prefetch" href="/assets/js/31.47dfe6c5.js"><link rel="prefetch" href="/assets/js/32.aa4f75c4.js"><link rel="prefetch" href="/assets/js/33.a0886aca.js"><link rel="prefetch" href="/assets/js/34.f723d73f.js"><link rel="prefetch" href="/assets/js/35.044f95f2.js"><link rel="prefetch" href="/assets/js/36.412d7598.js"><link rel="prefetch" href="/assets/js/37.e9f8ec81.js"><link rel="prefetch" href="/assets/js/38.1a2ba3c1.js"><link rel="prefetch" href="/assets/js/39.a7fbebd6.js"><link rel="prefetch" href="/assets/js/4.d0d56fc2.js"><link rel="prefetch" href="/assets/js/40.16f9ecd7.js"><link rel="prefetch" href="/assets/js/41.a972b09b.js"><link rel="prefetch" href="/assets/js/42.729ef6e1.js"><link rel="prefetch" href="/assets/js/43.8c1a30a2.js"><link rel="prefetch" href="/assets/js/44.35dd43d4.js"><link rel="prefetch" href="/assets/js/45.7ab0b0a4.js"><link rel="prefetch" href="/assets/js/46.9301a142.js"><link rel="prefetch" href="/assets/js/47.c6275b7e.js"><link rel="prefetch" href="/assets/js/48.84bb7a65.js"><link rel="prefetch" href="/assets/js/49.38c3c5d8.js"><link rel="prefetch" href="/assets/js/5.ed2b2995.js"><link rel="prefetch" href="/assets/js/50.b667c063.js"><link rel="prefetch" href="/assets/js/51.e4b24a73.js"><link rel="prefetch" href="/assets/js/52.5ff481ae.js"><link rel="prefetch" href="/assets/js/53.14a52070.js"><link rel="prefetch" href="/assets/js/54.193e6958.js"><link rel="prefetch" href="/assets/js/55.e3286fef.js"><link rel="prefetch" href="/assets/js/56.e785b4cf.js"><link rel="prefetch" href="/assets/js/57.c19a8da7.js"><link rel="prefetch" href="/assets/js/58.e1852b94.js"><link rel="prefetch" href="/assets/js/59.c986f152.js"><link rel="prefetch" href="/assets/js/6.adb741bc.js"><link rel="prefetch" href="/assets/js/60.be879aba.js"><link rel="prefetch" href="/assets/js/61.d16e426f.js"><link rel="prefetch" href="/assets/js/62.95577bb2.js"><link rel="prefetch" href="/assets/js/63.f5f43663.js"><link rel="prefetch" href="/assets/js/64.c920013b.js"><link rel="prefetch" href="/assets/js/65.d820a26e.js"><link rel="prefetch" href="/assets/js/66.8302d536.js"><link rel="prefetch" href="/assets/js/67.cdef6271.js"><link rel="prefetch" href="/assets/js/68.199415d5.js"><link rel="prefetch" href="/assets/js/69.57fb0995.js"><link rel="prefetch" href="/assets/js/7.87b79a1a.js"><link rel="prefetch" href="/assets/js/70.0ccec31e.js"><link rel="prefetch" href="/assets/js/71.0a26558a.js"><link rel="prefetch" href="/assets/js/72.c923bb08.js"><link rel="prefetch" href="/assets/js/73.fc594210.js"><link rel="prefetch" href="/assets/js/8.14f231cf.js"><link rel="prefetch" href="/assets/js/9.6174f6e2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5dca0c20.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">王思杰的前端笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note/" class="nav-link router-link-active">
+  日常笔记
+</a></div><div class="nav-item"><a href="/advanced/webpack/" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/backend/node基础/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/services/nginx基础/" class="nav-link">
+  服务器
+</a></div><div class="nav-item"><a href="/computerbasic/进制/" class="nav-link">
+  计算机基础
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="https://github.com/simonwong" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note/" class="nav-link router-link-active">
+  日常笔记
+</a></div><div class="nav-item"><a href="/advanced/webpack/" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/backend/node基础/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/services/nginx基础/" class="nav-link">
+  服务器
+</a></div><div class="nav-item"><a href="/computerbasic/进制/" class="nav-link">
+  计算机基础
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="https://github.com/simonwong" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/note/" class="sidebar-link">目录</a></li><li><a href="/note/日常笔记.html" class="sidebar-link">日常笔记</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>React</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/note/React/React笔记.html" class="active sidebar-link">React笔记</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/React/React笔记.html#react工作原理" class="sidebar-link">React工作原理</a></li><li class="sidebar-sub-header"><a href="/note/React/React笔记.html#jsx优缺点" class="sidebar-link">jsx优缺点</a></li><li class="sidebar-sub-header"><a href="/note/React/React笔记.html#使用props还是state" class="sidebar-link">使用props还是state</a></li><li class="sidebar-sub-header"><a href="/note/React/React笔记.html#react-生命周期" class="sidebar-link">React 生命周期</a></li><li class="sidebar-sub-header"><a href="/note/React/React笔记.html#为什么纯函数无状态组件" class="sidebar-link">为什么纯函数无状态组件</a></li><li class="sidebar-sub-header"><a href="/note/React/React笔记.html#创建高阶组件（hoc，higher-order-component" class="sidebar-link">创建高阶组件（HoC，Higher-Order Component)</a></li><li class="sidebar-sub-header"><a href="/note/React/React笔记.html#组件通讯" class="sidebar-link">组件通讯</a></li></ul></li><li><a href="/note/React/react hooks使用技巧.html" class="sidebar-link">React Hooks 使用技巧</a></li></ul></section></li><li><a href="/note/常用的css.html" class="sidebar-link">常用的CSS</a></li><li><a href="/note/构建脚手架.html" class="sidebar-link">构建脚手架</a></li><li><a href="/note/webapp.html" class="sidebar-link">webapp 开发总结</a></li><li><a href="/note/基础算法.html" class="sidebar-link">JS基础算法</a></li><li><a href="/note/js语言精粹.html" class="sidebar-link">js语言精粹笔记</a></li><li><a href="/note/提升开发体验.html" class="sidebar-link">提升开发体验</a></li><li><a href="/note/taro的使用心得.html" class="sidebar-link">Taro 使用心得</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="react笔记"><a href="#react笔记" class="header-anchor">#</a> React笔记</h1> <h2 id="react工作原理"><a href="#react工作原理" class="header-anchor">#</a> React工作原理</h2> <p><img src="http://file.wangsijie.top/18-6-7/39311438.jpg" alt=""></p> <h3 id="ui-f-data"><a href="#ui-f-data" class="header-anchor">#</a> <code>UI = f(data)</code></h3> <p>data就是props和state</p> <p>Virtual DOM</p> <p>diff算法
+<code>O(n^2)</code>的时间复杂度
+<img src="http://file.wangsijie.top/17-12-5/7884015.jpg" alt=""></p> <p><code>react</code>是<code>O(n)</code>的时间复杂度
+A挂到B，不是移动，而是<code>unmount</code> A，然后再B上<code>mount</code></p> <p>下面这种情况，动态产生子组件，插入一个X，react会认为B被删除，加入了X。会造成浪费。
+这个时候需要有一个key的props，来表示插了一个。
+key在兄弟节点必须唯一的，稳定的
+<img src="http://file.wangsijie.top/17-12-5/48778188.jpg" alt=""></p> <h3 id="一切都是组件"><a href="#一切都是组件" class="header-anchor">#</a> 一切都是组件</h3> <h3 id="声明式编程-declarative-programming"><a href="#声明式编程-declarative-programming" class="header-anchor">#</a> 声明式编程(Declarative Programming)</h3> <h2 id="jsx优缺点"><a href="#jsx优缺点" class="header-anchor">#</a> jsx优缺点</h2> <h2 id="使用props还是state"><a href="#使用props还是state" class="header-anchor">#</a> 使用props还是state</h2> <p><img src="http://file.wangsijie.top/17-12-5/98686630.jpg" alt=""></p> <h2 id="react-生命周期"><a href="#react-生命周期" class="header-anchor">#</a> React 生命周期</h2> <h3 id="mount"><a href="#mount" class="header-anchor">#</a> mount</h3> <ul><li>getDefaultProps</li> <li>getInitialState</li> <li>componentWillMount</li> <li>render</li> <li>componentDidMount</li></ul> <h3 id="update"><a href="#update" class="header-anchor">#</a> update</h3> <p>如果state change ：</p> <ul><li>shouldComponentUpdate</li> <li>componentWillUpdate</li> <li>render</li> <li>componentDidUpdate</li></ul> <p>如果父组件想要重画子组件 ：</p> <ul><li>componentWillReceiveProps</li> <li>shouldComponentUpdate</li> <li>componentWillUpdate</li> <li>render</li> <li>componentDidUpdate</li></ul> <h3 id="unmount"><a href="#unmount" class="header-anchor">#</a> unmount</h3> <h2 id="为什么纯函数无状态组件"><a href="#为什么纯函数无状态组件" class="header-anchor">#</a> 为什么纯函数无状态组件</h2> <p>还有一种组件，返回空，但是要处理逻辑</p> <p>例子： 什么都不画，但是每隔5秒向服务器发送一次请求</p> <div class="language- extra-class"><pre class="language-text"><code>import React from 'react';
+
+export default class HeartBeat extends React.Component {
+  render() {
+    return null;
+  }
+
+  componentDidMount() {
+    this.timer = setInterval(() =&gt; {
+      fetch('/api/v1/heartbeat');
+    }, 5000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
+  }
+}
+</code></pre></div><h2 id="创建高阶组件（hoc，higher-order-component"><a href="#创建高阶组件（hoc，higher-order-component" class="header-anchor">#</a> 创建高阶组件（HoC，Higher-Order Component)</h2> <p>组件类共享</p> <p>有一些重复的功能，就创建高阶组件</p> <div class="language- extra-class"><pre class="language-text"><code>const HoC = (WrappedComponent) =&gt; {
+    class WrappingComponent extends WrappendComponent {
+        render() (
+            const {user, ...otherProps} = this.props;
+            this.props = otherProps;
+            return super.render();
+        }
+    }
+    return WrappingComponent;
+};
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>const HoC = (WrappedComponent, LoginView) =&gt; {
+    const WrappingComponent = () =&gt; {
+         const {user} = this.props;  
+         if (user) {
+            return &lt;WrappedComponent {...this.props} /&gt;
+         } else {
+            return &lt;LoginView {...this.props} /&gt;
+         }
+    };
+    return WrappingComponent;
+};
+</code></pre></div><h2 id="组件通讯"><a href="#组件通讯" class="header-anchor">#</a> 组件通讯</h2> <blockquote><p>props传递
+<img src="http://file.wangsijie.top/17-12-5/24094491.jpg" alt=""></p></blockquote> <blockquote><p>通过父级
+<img src="http://file.wangsijie.top/17-12-5/27569226.jpg" alt=""></p></blockquote> <blockquote><p>方法一：全局变量
+方法二：context，差不多是全局变量
+<img src="http://file.wangsijie.top/17-12-5/57846296.jpg" alt=""></p></blockquote></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">8 minutes ago</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/note/日常笔记.html" class="prev">
+        日常笔记
+      </a></span> <span class="next"><a href="/note/React/react hooks使用技巧.html">
+        React Hooks 使用技巧
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.c4d6f5b8.js" defer></script><script src="/assets/js/2.2626b531.js" defer></script><script src="/assets/js/29.36016667.js" defer></script>
+  </body>
+</html>
